@@ -1,0 +1,25 @@
+node_modules/
+
+# All .env files — never commit secrets
+.env
+.env.*
+!.env.example
+
+# Firebase / Google service account files — never commit
+*firebase-adminsdk*.json
+*service-account*.json
+google-services.json
+GoogleService-Info.plist
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Service account keys under ANY name (this once leaked as serviceAccountKey.json)
+serviceAccountKey*.json
+*[Ss]ervice[-_]?[Aa]ccount*.json
+*-adminsdk-*.json
